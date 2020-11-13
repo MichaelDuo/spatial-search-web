@@ -1,0 +1,8 @@
+build/*
+dist/*
+public/*
+config/*
+scripts/*
+src/**/__test__/*
+src/**/__tests__/*
+tests/**
