@@ -1,0 +1,39 @@
+$point_diameter: 30px;
+$green: rgb(26, 176, 94);
+$blue: blue;
+$orange: orange;
+$red: red;
+
+.point {
+	width: $point_diameter;
+	height: $point_diameter;
+	line-height: $point_diameter;
+	border: 1px solid black;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.point.green {
+	border-color: $green;
+	background-color: $green;
+	color: white;
+}
+
+.point.blue {
+	border-color: $blue;
+	background-color: $blue;
+	color: white;
+}
+
+.point.orange {
+	border-color: $orange;
+	background-color: $orange;
+	color: white;
+}
+
+.point.red {
+	border-color: $red;
+	background-color: $red;
+	color: white;
+}

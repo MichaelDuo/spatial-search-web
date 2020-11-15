@@ -1,15 +1,27 @@
 import {APP_INCREMENT, APP_DECREMENT} from 'actions';
+import {AnyAction} from 'redux';
 
 const initialState = {
 	count: 1,
+	bounding: {},
+	points: [] as any[],
 };
 
-function AppReducer(state = initialState, action: Action): typeof initialState {
+function AppReducer(
+	state = initialState,
+	action: AnyAction
+): typeof initialState {
 	switch (action.type) {
-		case APP_INCREMENT:
-			return {...state, ...{count: state.count + 1}};
-		case APP_DECREMENT:
-			return {...state, ...{count: state.count - 1}};
+		case 'SET_BOUNDING':
+			return {
+				...state,
+				...{bounding: action.payload},
+			};
+		case 'SET_POINTS':
+			return {
+				...state,
+				...{points: action.payload},
+			};
 		default:
 			return state;
 	}
