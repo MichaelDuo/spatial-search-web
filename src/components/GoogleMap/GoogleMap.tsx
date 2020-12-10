@@ -37,7 +37,7 @@ function GoogleMap(props: any): JSX.Element {
 						key={index}
 						lat={p.lat}
 						lng={p.lng}
-						rank={index}
+						rank={index+1}
 						total={points.length}
 					/>
 				))}
