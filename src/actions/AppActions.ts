@@ -47,7 +47,7 @@ export default {
 			lr: `${bounding.east},${bounding.south}`,
 			...weights
 		}
-		axios.get(`http://${API_ENDPOINT}rank`, {params: query}).then((data)=>{
+		axios.get(`http://${API_ENDPOINT}/rank`, {params: query}).then((data)=>{
 			// const points = generatePoints(bounding);
 			let points = data.data.map((p: any)=>({lat: (p.ul.latitude+p.lr.latitude)/2, lng: (p.ul.longitude+p.lr.longitude)/2, rank: p.rank}))
 			.sort((a: any, b: any)=>{
