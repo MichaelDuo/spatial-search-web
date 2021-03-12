@@ -51,7 +51,7 @@
 		"husky": "^4.2.5",
 		"jest": "^25.4.0",
 		"prettier": "^2.0.5",
-		"react-dev-utils": "^10.2.1",
+		"react-dev-utils": "^11.0.4",
 		"sass": "^1.26.5",
 		"sass-loader": "^8.0.2",
 		"source-map-loader": "^0.2.4",
